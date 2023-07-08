@@ -1,0 +1,24 @@
+{
+  "name": "modpack",
+  "module": "src/main.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm --no-warnings src/main.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/terminal-kit": "^2.5.1",
+    "@xmcl/modrinth": "^2.1.0",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1",
+    "terminal-kit": "^3.0.0",
+    "ts-node": "^10.9.1",
+    "zod": "^3.21.4"
+  }
+}
