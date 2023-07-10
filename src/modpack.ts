@@ -1,13 +1,13 @@
-import { ModrinthV2Client, Project, ProjectVersion } from '@xmcl/modrinth'
+import { Project, ProjectVersion } from '@xmcl/modrinth'
 import { randomBytes } from 'crypto'
 import fs from 'fs-extra'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import zod from 'zod'
-import { defaultMods, getBestVersion, getProject, getProjectFromVersionId, loaders } from './modrinth.ts'
-import { eraseLines, term } from './terminal.ts'
+import { defaultMods, getBestVersion, getProject, getProjectFromVersionId, loaders } from './modrinth.js'
+import { eraseLines, term } from './terminal.js'
 
-const modpackDirectory = path.join(path.dirname(fileURLToPath(import.meta.url)), 'modpacks')
+export const modpackDirectory = path.join(path.dirname(fileURLToPath(import.meta.url)), 'modpacks')
 
 const modpackSchema = zod.object({
   name: zod.string(),

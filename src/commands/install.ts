@@ -1,10 +1,10 @@
 import fs from "fs-extra"
-import { Modpack, selectModpack } from "../modpack.ts"
-import { eraseLines, term, title } from "../terminal.ts"
+import { homedir } from 'os'
+import path from 'path'
 import { Readable } from 'stream'
 import { finished } from 'stream/promises'
-import path from 'path'
-import { homedir } from 'os'
+import { Modpack, selectModpack } from "../modpack.js"
+import { eraseLines, term, title } from "../terminal.js"
 
 async function storeExistingMods(minecraftFolder: string) {
   // place all items in modFolder into a backup folder
@@ -55,7 +55,7 @@ export default async function install() {
   term('\n')
   term('Assembling dependencies\n')
   const dependencies = await modpack.fullModList()
-  term(`Omitting ${dependencies.omitted.length} mods that do not have a support version.\n\n`)
+  term(`Omitting ${dependencies.omitted.length} mods that do not have a supported version.\n\n`)
   const mods = dependencies.results
   const progress = term.progressBar({
     title: 'Downloading files...',

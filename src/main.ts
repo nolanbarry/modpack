@@ -1,12 +1,13 @@
+#!/usr/bin/env node
 import { program } from 'commander'
-import create from './commands/create.ts'
-import list from './commands/list.ts'
-import { term } from './terminal.ts'
-import info from './commands/info.ts'
-import add from './commands/add.ts'
-import deleteModpack from './commands/delete-modpack.ts'
-import install from './commands/install.ts'
-import remove from './commands/remove.ts'
+import add from './commands/add.js'
+import create from './commands/create.js'
+import deleteModpack from './commands/delete-modpack.js'
+import info from './commands/info.js'
+import install from './commands/install.js'
+import list from './commands/list.js'
+import remove from './commands/remove.js'
+import { term } from './terminal.js'
 
 const exitAfter = (action: () => any) => {
   // commander passes command args as list in first parameter

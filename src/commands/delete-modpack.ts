@@ -1,5 +1,5 @@
-import { Modpack, selectModpack } from "../modpack.ts"
-import { term, title } from "../terminal.ts"
+import { Modpack, selectModpack } from "../modpack.js"
+import { term, title } from "../terminal.js"
 
 export default async function () {
   title('Delete Modpack')

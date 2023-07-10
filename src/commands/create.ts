@@ -1,7 +1,7 @@
-import { gameVersions, loaders } from '../modrinth.ts'
+import { gameVersions, loaders } from '../modrinth.js'
 import { GameVersion } from '@xmcl/modrinth'
-import { eraseLines, term, title } from '../terminal.ts'
-import { Modpack } from '../modpack.ts'
+import { eraseLines, term, title } from '../terminal.js'
+import { Modpack } from '../modpack.js'
 
 async function getName(): Promise<string> {
   await Modpack.loadModpacksFromDisc()

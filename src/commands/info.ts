@@ -1,11 +1,13 @@
-import { Modpack, selectModpack } from "../modpack.ts"
-import { eraseLines, term, title } from "../terminal.ts"
+import { Modpack, modpackDirectory, selectModpack } from "../modpack.js"
+import { term, title } from "../terminal.js"
 
 export default async function info() {
   title('Modpack Info')
+
+  term('Modpacks path: ').italic(modpackDirectory)('\n\n')
   await Modpack.loadModpacksFromDisc()
   if (Modpack.allLoaded.length === 0) {
-    term.red('  None found')('. Use ').blue('modpack create')('.\n')
+    term.red('No modpacks found')('. Use ').blue('modpack create')('.\n')
     return
   }
   const modpack = await selectModpack()

@@ -1,5 +1,5 @@
-import { Modpack } from "../modpack.ts"
-import { term, title } from "../terminal.ts"
+import { Modpack } from "../modpack.js"
+import { term, title } from "../terminal.js"
 
 export default async function list() {
   title('List Modpacks')

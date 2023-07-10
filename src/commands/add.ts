@@ -1,6 +1,6 @@
-import { Modpack, selectModpack } from "../modpack.ts"
-import { getBestVersion, getProject } from "../modrinth.ts"
-import { eraseLines, term, title } from "../terminal.ts"
+import { Modpack, selectModpack } from "../modpack.js"
+import { getBestVersion, getProject } from "../modrinth.js"
+import { eraseLines, term, title } from "../terminal.js"
 
 export default async function add() {
   title('Expand Modpack')

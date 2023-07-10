@@ -1,6 +1,6 @@
 import { Project } from "@xmcl/modrinth"
-import { Modpack, selectModpack } from "../modpack.ts"
-import { eraseLines, term, title } from "../terminal.ts"
+import { Modpack, selectModpack } from "../modpack.js"
+import { term, title } from "../terminal.js"
 
 async function selectMod(mod: Project[]) {
   const modNames = mod.map(m => m.title)

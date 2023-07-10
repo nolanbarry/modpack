@@ -4,14 +4,17 @@
     "target": "ESNext",
     "moduleResolution": "NodeNext",
     "moduleDetection": "force",
-    "allowImportingTsExtensions": true,
     "strict": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
-    "noEmit": true,
-  }
+    "allowJs": false,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declaration": true
+    
+  },
+  "include": ["./src/"]
 }

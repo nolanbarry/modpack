@@ -1,4 +1,4 @@
-import { ModrinthV2Client, Project, ProjectVersion } from '@xmcl/modrinth'
+import { ModrinthV2Client, Project } from '@xmcl/modrinth'
 
 const client = new ModrinthV2Client()
 
