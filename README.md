@@ -3,9 +3,9 @@ Modpack is a command line tool for managing collections of minecraft mods. I mad
 into a feature I need, it's not here. It uses modrinth to find and download mods.
 
 Features I haven't added:
-Smart replacement of mods (don't replace mods with the same version, don't replace mods added manually, etc.)
-Version forcing (For mods that say they only work with a specific game version but may work with later versions)
-Testing forge at all
+- Smart replacement of mods (don't replace mods with the same version, don't replace mods added manually, etc.)
+- Version forcing (For mods that say they only work with a specific game version but may work with later versions)
+- Testing forge at all
 
 To install:
 ```
