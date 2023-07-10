@@ -8,6 +8,7 @@ import install from './commands/install.js'
 import list from './commands/list.js'
 import remove from './commands/remove.js'
 import { term } from './terminal.js'
+import upgrade from './commands/upgrade.js'
 
 const exitAfter = (action: () => any) => {
   // commander passes command args as list in first parameter
@@ -57,5 +58,9 @@ program.command('remove')
   .alias('rm')
   .description('Remove mods from a modpack')
   .action(exitAfter(remove))
+
+program.command('upgrade')
+  .description('Change the version of a modpack')
+  .action(exitAfter(upgrade))
 
 program.parse()

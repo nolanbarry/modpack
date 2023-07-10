@@ -18,6 +18,7 @@ export default async function install() {
   await Modpack.loadModpacksFromDisc()
 
   const modpack = await selectModpack()
+  term.bold.italic.blue(`${modpack.name}`).styleReset(` (${modpack.loader} v${modpack.version}`)(')\n\n')
   let minecraftPath = {
     'darwin': `~/Library/Application Support/minecraft`,
     'linux': '~/.minecraft',
