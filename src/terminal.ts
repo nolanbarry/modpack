@@ -3,6 +3,7 @@ import terminalKit from 'terminal-kit'
 export const term = terminalKit.terminal
 
 export function title(text: string) {
+  term.scrollDown(term.height)
   term.clear().bold.bgColorRgbHex('#FF6700')(` * ${text} * \n\n`).styleReset()
 }
 

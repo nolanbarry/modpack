@@ -6,6 +6,7 @@ import info from './commands/info.ts'
 import add from './commands/add.ts'
 import deleteModpack from './commands/delete-modpack.ts'
 import install from './commands/install.ts'
+import remove from './commands/remove.ts'
 
 const exitAfter = (action: () => any) => {
   // commander passes command args as list in first parameter
@@ -50,5 +51,10 @@ program.command('install')
   .alias('i')
   .description('Install a modpack')
   .action(exitAfter(install))
+
+program.command('remove')
+  .alias('rm')
+  .description('Remove mods from a modpack')
+  .action(exitAfter(remove))
 
 program.parse()

@@ -15,7 +15,7 @@ export default async function info() {
     if (mods.length === 0)
       term.gray(' None yet')
     else for (let mod of mods)
-      term(` - ${mod.title}`)
+      term(` - ${mod.title}\n`)
 
   })
 }
