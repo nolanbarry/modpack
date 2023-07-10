@@ -1,6 +1,7 @@
 # Modpack
 Modpack is a command line tool for managing collections of minecraft mods. I made it just for myself so if I haven't run
-into a feature I need, it's not here. It uses modrinth to find and download mods.
+into a feature I need, it's not here. It uses modrinth to find and download mods, and automatically handles dependencies - you
+do not need to manually add dependencies unless they aren't listed on modrinth.
 
 Features I haven't added:
 - Smart replacement of mods (don't replace mods with the same version, don't replace mods added manually, etc.)
