@@ -3,7 +3,8 @@
   "module": "src/main.ts",
   "type": "module",
   "scripts": {
-    "start": "node --loader ts-node/esm --no-warnings src/main.ts"
+    "start": "node --loader ts-node/esm --no-warnings src/main.ts",
+    "debug": "node --loader ts-node/esm --no-warnings --inspect-brk src/main.ts"
   },
   "devDependencies": {
     "bun-types": "latest"
